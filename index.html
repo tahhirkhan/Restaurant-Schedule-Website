@@ -57,10 +57,49 @@
     <div class="px-4 table-responsive">
         <h1 class="text-center my-3" id="heading"><img src="/assets/restaurantLogo.png" class="img img-fluid" alt="...">
             RESTAURANT SCHEDULE</h1>
+
+        <div class="row mb-5 mt-4">
+
+            <!--Filter 1-->
+            <div class="col d-flex justify-content-end">
+                <form action="" id="dataForm" class="row row-cols-lg-auto g-3 align-items-center">
+                    <div class="col-12">
+                        <select id="data" class="form-select bg-transparent fw-bolder border border-primary">
+                            <option value="All Employees">All Employees</option>
+                            <option value="Currently Working">Currently Working</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Show</button>
+                    </div>
+                </form>
+            </div>
+
+
+            <!--Filter 2-->
+            <div class="col">
+                <form action="" id="deptForm" class="row row-cols-lg-auto g-3 align-items-center">
+                    <div class="col-12">
+                        <select id="department" class="form-select bg-transparent fw-bolder border border-primary">
+                            <option value="All Staff">All Staff</option>
+                            <option value="Kitchen Staff">Kitchen Staff</option>
+                            <option value="Service Staff">Service Staff</option>
+                            <option value="Administrative Staff">Administrative Staff</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Show</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        <!--Header Start-->
         <table class="table table-bordered table-warning">
             <tbody class="text-center">
                 <tr>
-                    <th class="align-middle" id="firstCol" rowspan="2">
+                    <th scope="col" class="align-middle" id="firstCol" rowspan="2">
                         <select class="form-select bg-transparent text-center fw-bolder"
                             aria-label="Default select example">
                             <option selected>WEEK 1</option>
@@ -91,10 +130,9 @@
         </table>
     </div>
 
-
     <!--=====================================================TABLE 2 - KITCHEN STAFF=====================================================-->
 
-    <div class="px-4 table-responsive">
+    <div id="kitchenStaff" class="px-4 table-responsive">
         <h3 class="text-center my-2" id="sectionHeading">KITCHEN STAFF</h3>
         <table class="table table-bordered table-primary">
             <tbody class="text-center">
@@ -570,7 +608,7 @@
 
     <!--=====================================================TABLE 3 - SERVICE STAFF=====================================================-->
 
-    <div class="px-4 table-responsive">
+    <div id="serviceStaff" class="px-4 table-responsive">
         <h3 class="text-center my-2" id="sectionHeading">SERVICE STAFF</h3>
         <table class="table table-bordered table-success">
             <tbody class="text-center">
@@ -1039,9 +1077,9 @@
         </table>
     </div>
 
-    <!--===================================================TABLE 4 - ADMINISTRATIVE STAFF===================================================-->
+    <!--===============================================TABLE 4 - ADMINISTRATIVE STAFF===================================================-->
 
-    <div class="px-4 table-responsive">
+    <div id="administrativeStaff" class="px-4 table-responsive">
         <h3 class="text-center my-2" id="sectionHeading">ADMINISTRATIVE STAFF</h3>
         <table class="table table-bordered table-danger">
             <tbody class="text-center">
@@ -1472,6 +1510,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
