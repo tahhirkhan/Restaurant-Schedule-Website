@@ -47,31 +47,21 @@
 
     <!--=====================================================TABLE 1 - TOP HEADER=====================================================-->
 
-    <div class="px-4 table-responsive">
-        <h1 class="text-center my-3" id="heading"><img src="/assets/restaurantLogo.png" class="img img-fluid" alt="...">
+    <div class="px-3 table-responsive">
+        <h1 class="text-center my-2" id="heading"><img src="/assets/restaurantLogo.png" class="img img-fluid" alt="Logo">
             RESTAURANT SCHEDULE</h1>
 
-        <div class="row mb-5 mt-4">
+        <div id="noPrint" class="row mb-4 mt-4">
 
-            <!--Filter 1-->
-            <div class="col d-flex justify-content-end">
-                <form action="" id="dataForm" class="row row-cols-lg-auto g-3 align-items-center">
+            <!--=============== FILTER ===============-->
+            <div class="col-7 d-flex justify-content-end">
+                <form action="" id="deptForm" class="row row-cols-lg-auto g-3 align-items-center">
                     <div class="col-12">
                         <select id="data" class="form-select bg-transparent fw-bolder border border-primary">
                             <option value="All Employees">All Employees</option>
                             <option value="Currently Working">Currently Working</option>
                         </select>
                     </div>
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Show</button>
-                    </div>
-                </form>
-            </div>
-
-
-            <!--Filter 2-->
-            <div class="col">
-                <form action="" id="deptForm" class="row row-cols-lg-auto g-3 align-items-center">
                     <div class="col-12">
                         <select id="department" class="form-select bg-transparent fw-bolder border border-primary">
                             <option value="All Staff">All Staff</option>
@@ -81,14 +71,22 @@
                         </select>
                     </div>
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Show</button>
+                        <button type="submit" class="btn btn-primary">Apply</button>
                     </div>
                 </form>
             </div>
 
+
+            <!--Print Button-->
+            <div class="col-2 text-center">
+                <button type="button" id="print" class="btn btn-primary">Print Document</button>
+            </div> 
+
         </div>
 
-        <!--Header Start-->
+        
+        <!--====================================== Table 1 - Week, Days and Date table ======================================-->
+        
         <table class="table table-bordered table-warning">
             <tbody class="text-center">
                 <tr>
@@ -125,8 +123,8 @@
 
     <!--=====================================================TABLE 2 - KITCHEN STAFF=====================================================-->
 
-    <div id="kitchenStaff" class="px-4 table-responsive">
-        <h3 class="text-center my-2" id="sectionHeading">KITCHEN STAFF</h3>
+    <div id="kitchenStaff" class="px-3 table-responsive">
+        <h3 class="text-center my-1" id="sectionHeading">KITCHEN STAFF</h3>
         <table class="table table-bordered table-primary">
             <tbody class="text-center">
 
@@ -601,8 +599,8 @@
 
     <!--=====================================================TABLE 3 - SERVICE STAFF=====================================================-->
 
-    <div id="serviceStaff" class="px-4 table-responsive">
-        <h3 class="text-center my-2" id="sectionHeading">SERVICE STAFF</h3>
+    <div id="serviceStaff" class="px-3 table-responsive">
+        <h3 class="text-center my-1" id="sectionHeading">SERVICE STAFF</h3>
         <table class="table table-bordered table-success">
             <tbody class="text-center">
 
@@ -1072,8 +1070,8 @@
 
     <!--===============================================TABLE 4 - ADMINISTRATIVE STAFF===================================================-->
 
-    <div id="administrativeStaff" class="px-4 table-responsive">
-        <h3 class="text-center my-2" id="sectionHeading">ADMINISTRATIVE STAFF</h3>
+    <div id="administrativeStaff" class="px-3 table-responsive">
+        <h3 class="text-center my-1" id="sectionHeading">ADMINISTRATIVE STAFF</h3>
         <table class="table table-bordered table-danger">
             <tbody class="text-center">
 

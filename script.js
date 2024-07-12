@@ -25,6 +25,17 @@ document.getElementById('deptForm').addEventListener('submit', function(event) {
 
 });
 
+document.getElementById('print').addEventListener('click', function(event) {
+    var noPrintSection = document.getElementById("noPrint");
+    noPrintSection.style.display = "none"; // hide the filters and print button
+    printSchedule();
+});
+
+// Print Schedule:
+function printSchedule() {
+    window.print();
+}
+
 
 // show KITCHEN STAFF only and hide the rest ones
 function showKitchenStaff() {
